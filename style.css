@@ -1,0 +1,46 @@
+.grille{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    background: url(ressources/etoile.jpg);
+    animation: background-defile 5s linear infinite;
+}
+
+@keyframes background-defile {
+    from{
+        background-position-y: 0px;
+    }
+    to{
+        background-position-y: 256px;
+    }
+}
+h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.grille div{
+    width: 25px;
+    height: 25px;
+}
+.tireur{
+    background: url(ressources/vaisseau.png);
+    transform: rotate(180deg);
+    background-position: center;
+    background-size: contain;
+}
+.alien{
+    background: url(ressources/ennemies.png);
+    background-position: center;
+    background-size: contain;
+}
+.boom{
+    background-color: red;
+}
+.laser{
+    background-color: greenyellow ;
+}
